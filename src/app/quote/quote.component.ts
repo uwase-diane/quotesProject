@@ -15,6 +15,14 @@ export class QuoteComponent implements OnInit {
     new QuoteClass(2, 'Watch finding Nemo', 'Cissie','Manzi', new Date(2020,3,14),0,0)
   ];
 
+  addNewQuote(quote){
+    let quotelength = this.quotes.length;
+    quote.id = quotelength + 1;
+    quote.completeDate = new Date(quote.completeDate)
+    this.quotes.push(quote)
+  }
+
+
   toggleDetails(index){
     this.quotes[index].showDescription = !this.quotes[index].showDescription;
   }
