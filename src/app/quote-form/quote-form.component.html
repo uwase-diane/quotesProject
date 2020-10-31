@@ -1,23 +1,33 @@
 
 <div class="container-fluid">
 
-    <form #quoteForm='ngForm'>
+    <form (ngSubmit)='submitGoal()' #quoteForm='ngForm'>
         <div class="form-group">
   
             <label for="author">Author</label>
-            <input type="text" required class="form-control" id="author" [(ngModel)]="newQuote.author" name="author">
+            <input type="text" required class="form-control" id="author" name="author" [(ngModel)]="newQuote.author" #author="ngModel" required>
   
-            Display {{newQuote.author}}
+            <div [hidden]="author.valid || author.pristine" class="alert alert-danger">
+                <p>Name is required</p>
+              </div>
+    
         </div>
         <div class="form-group">
 
             <label for="quotename">Quote</label>
-            <textarea class="form-control" id="description" rows="4" required></textarea>
-  
+            <textarea class="form-control" id="quotename" rows="4" [(ngModel)]="newQuote.quotename" name="quotename" #quotename="ngModel" required></textarea>
+            <div [hidden]="quotename.valid || quotename.pristine" class="alert alert-danger">
+                <p>the Quote is required</p>
+              </div>
+    
         </div>
         <div class="form-group">
-            <label for="complete">Date</label>
-            <input type='date' id="complete" required>
+            <label for="completeDate">Date</label>
+            <input type='date' id="completeDate" [(ngModel)]="newQuote.completeDate" name="completeDate" #completeDate="ngModel" required>
+
+            <div [hidden]="completeDate.valid || completeDate.pristine" class="alert alert-danger">
+                <p>Date is required</p>
+              </div>
   
         </div>
         <button type="submit" class="btn btn-success">POST QUOTE</button>
