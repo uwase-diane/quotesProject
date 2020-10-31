@@ -1,7 +1,14 @@
-<h1>CREATED QUOTES</h1>
+<h1 class="text-center">CREATE A NEW QUOTE</h1>
+
+<hr>
 <hr>
 
-<div class="card col-sm-4">
+<div class="container">
+   
+    <div class="row">
+      <div class="col-md-6">
+
+        <div class="card">
     <div class="card-body">
         <ul>
             <div *ngFor='let quote of quotes; let i = index'>
@@ -13,5 +20,14 @@
         </div>
         </ul>
     </div>
+    </div>
+      </div>
+      <div class="col-md-6">
+        <app-quote-form></app-quote-form>
+      </div>
+    </div>
+    <p *ngIf='quotes.length > 5'>You have too many goals</p>
+  </div>
+
 
 <p *ngIf='quotes.length > 10'>TOO MUCH QUOTES</p>
