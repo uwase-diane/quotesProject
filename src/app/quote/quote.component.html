@@ -1,12 +1,17 @@
 <h1>CREATED QUOTES</h1>
 <hr>
-<ul>
-    <div *ngFor='let quote of quotes; let i = index'>
-    <li>
-        {{ quote.quotename }}
-    </li>
-    <button (click)='toggleDetails(i)'>Quote Details</button>
-    <app-quote-details *ngIf='quote.showDescription' [quote]='quote' (isComplete)='deleteQuote($event,i)'></app-quote-details>
-</div>
-</ul>
+
+<div class="card col-sm-4">
+    <div class="card-body">
+        <ul>
+            <div *ngFor='let quote of quotes; let i = index'>
+            <li  class="card-title">
+                {{ quote.quotename }}
+            </li>
+            <button class="btn btn-success"  (click)='toggleDetails(i)'>Quote Details</button>
+            <app-quote-details *ngIf='quote.showDescription' [quote]='quote' (isComplete)='deleteQuote($event,i)'></app-quote-details>
+        </div>
+        </ul>
+    </div>
+
 <p *ngIf='quotes.length > 10'>TOO MUCH QUOTES</p>
