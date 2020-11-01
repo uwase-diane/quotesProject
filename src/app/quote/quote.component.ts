@@ -11,8 +11,8 @@ export class QuoteComponent implements OnInit {
  
  
   quotes: QuoteClass[] = [
-    new QuoteClass(1, 'Watch finding Nemo', 'Cissie','Manzi', new Date(2020,3,14)),
-    new QuoteClass(2, 'Watch finding Nemo', 'Cissie','Manzi', new Date(2020,3,14))
+    new QuoteClass(1, 'The best portion of a good man’s life is his little nameless, unencumbered acts of kindness and of love.', ' Wordsworth','UD', new Date(2020,3,14)),
+    
   ];
 
   addNewQuote(quote){
