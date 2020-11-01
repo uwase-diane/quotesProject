@@ -1,3 +1,15 @@
 .btn{
     margin: 10px 10px;
 }
+.datee p{
+    font-size: 13px;
+    padding-bottom: 15px;
+}
+.author p{
+   font-weight: bold;
+}
+
+.publisher p{
+    font-size: 15px;
+  
+}

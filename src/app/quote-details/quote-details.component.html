@@ -1,11 +1,15 @@
-
-<div>
-    <ul>
-        <li>Author: {{ quote.author }}</li>
-        <li>publisher: {{ quote.publisher }}</li>
-        <li> {{quote.completeDate|date|dateCount}} days ago</li>
-    </ul>
+<div class="container">
+    <div class="author">
+        <p> ~~{{ quote.author }}</p>
+    </div>
+    
+        <p class="publisher"> {{ quote.publisher }}</p>
+    
+    <div class="datee">
+        <p> {{quote.completeDate|date|dateCount}} days ago</p>
+    </div>
 </div>
+
 <button class="btn btn-outline-warning" (click)="likeButtonClick()">{{vote}}  <i class="fa fa-thumbs-up" aria-hidden="true"></i></button>
 <button class="btn btn-outline-dark" (click) ='dislikeButtonClick()'>{{unvote}}  <i class="fa fa-thumbs-down" aria-hidden="true"></i></button> 
 <button class="btn btn-outline-danger" (click)= 'quoteDelete(true)'>Delete</button> 
