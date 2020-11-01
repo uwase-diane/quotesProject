@@ -16,3 +16,11 @@ height: 120vh;
 img{
     border-radius: 20px;
 }
+.form-group input{
+    border: none;
+    outline: none;
+    background: none;
+    color: #fff;
+   
+
+}
