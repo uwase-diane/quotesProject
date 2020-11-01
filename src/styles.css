@@ -4,4 +4,15 @@
 body{
 padding: 0;
 margin: 0;
+background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url(https://res.cloudinary.com/auca/image/upload/v1604233382/image2_hlc2rx.jpg);
+background-size: cover;
+background-position: center;
+height: 120vh;
+}
+
+.bg{
+    background-color: #3A4B33;
+}
+img{
+    border-radius: 20px;
 }

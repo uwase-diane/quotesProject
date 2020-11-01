@@ -1,4 +1,4 @@
-
+<h1>Create QUOTE</h1>
 <div class="container-fluid">
 
     <form (ngSubmit)='submitGoal()' #quoteForm='ngForm'>
@@ -32,7 +32,7 @@
     
         </div>
         <div class="form-group">
-            <label for="completeDate">Date</label>
+            <label for="completeDate">Date</label><br>
             <input type='date' id="completeDate" [(ngModel)]="newQuote.completeDate" name="completeDate" #completeDate="ngModel" required>
 
             <div [hidden]="completeDate.valid || completeDate.pristine" class="alert alert-danger">

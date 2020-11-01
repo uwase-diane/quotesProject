@@ -9,6 +9,16 @@ import { QuoteClass } from '../quote-class';
 })
 export class QuoteDetailsComponent implements OnInit {
 
+  vote = 0;
+  unvote = 0;
+
+  likeButtonClick(){
+    this.vote ++;
+  }
+  
+  dislikeButtonClick(){
+    this.unvote --;
+  }
 
   @Input() quote: QuoteClass;
   @Output() isComplete = new EventEmitter<boolean>();
@@ -16,6 +26,8 @@ export class QuoteDetailsComponent implements OnInit {
   quoteDelete(complete:boolean){
     this.isComplete.emit(complete);
   }
+
+
 
   constructor() { }
 

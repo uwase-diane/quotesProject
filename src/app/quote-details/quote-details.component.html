@@ -1,8 +1,10 @@
-<p>Author: {{ quote.author }}</p>
-<p>publisher: {{ quote.publisher }}</p>
-<p>Upvotes:{{ quote.vote }}</p>
-<p>Downvotes: {{ quote.unvote }}</p>
-<p>Date {{quote.completeDate|date}}</p>
-<button class="btn btn-primary">Upvote</button>
-<button class="btn btn-primary">Downvote</button> 
+<div>
+    <ul>
+        <li>Author: {{ quote.author }}</li>
+        <li>publisher: {{ quote.publisher }}</li>
+        <li> {{quote.completeDate|date}}</li>
+    </ul>
+</div>
+<button class="btn btn-primary" (click)="likeButtonClick()">{{vote}} Upvote</button>
+<button class="btn btn-primary" (click) ='dislikeButtonClick()'>{{unvote}} Downvote</button> 
 <button class="btn btn-danger" (click)= 'quoteDelete(true)'>Delete</button> 

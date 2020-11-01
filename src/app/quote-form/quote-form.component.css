@@ -1,0 +1,10 @@
+form{
+    border: 1px solid #3A4B33;
+    -transform: translate(50%,-50%);
+    background:#3A4B33;
+    width: 110%;
+    height: 110%;
+}
+label{
+    color: #ffffff;
+}
