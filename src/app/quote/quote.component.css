@@ -1,7 +1,15 @@
 h1{
     color: #fff;
     padding: 60px;
+   
 }
 .btn{
     background-color: #3A4B33;
+}
+span{
+    color: #3A4B33;
+    font-weight: bold;
+}
+.spann{
+    color: #fff;
 }
