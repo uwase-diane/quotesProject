@@ -15,7 +15,7 @@ You then run the command ng serve to see where you'll be viewing the project
 Then you run the cd command to now be working inside the project
 
 ## Project Link
-
+https://uwase-diane.github.io/quotesProject/
 
 ## Known Bugs
 
