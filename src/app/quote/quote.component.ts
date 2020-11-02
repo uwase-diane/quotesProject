@@ -11,7 +11,7 @@ export class QuoteComponent implements OnInit {
  
  
   quotes: QuoteClass[] = [
-    new QuoteClass(1, 'I always believed that when you follow your heart or your gut, when you really follow the things that feel great to you, you can never lose, because settling is the worst feeling in the world.', ' Rihanna','UD', new Date(2020,3,14)),
+    new QuoteClass(1,'The best portion of a good man’s life is his little nameless unencumbered acts of kindness and of love',' Wordsworth','ud', new Date(11,13,2019)),
     
   ];
 
