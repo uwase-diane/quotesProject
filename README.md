@@ -18,7 +18,7 @@ Then you run the cd command to now be working inside the project
 https://uwase-diane.github.io/quotesProject/
 
 ## Known Bugs
-
+DateCount
 
 
 ## Technologies Used
