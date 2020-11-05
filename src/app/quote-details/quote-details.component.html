@@ -11,6 +11,6 @@
     </div>
 </div>
 
-<button class="btn btn-outline-warning" (click)="likeButtonClick()">{{vote}}  <i class="fa fa-thumbs-up" aria-hidden="true"></i></button>
-<button class="btn btn-outline-dark" (click) ='dislikeButtonClick()'>{{unvote}}  <i class="fa fa-thumbs-down" aria-hidden="true"></i></button> 
+<button class="btn btn-outline-warning" (click)="likeButtonClick()">{{quote.vote}}  <i class="fa fa-thumbs-up" aria-hidden="true"></i></button>
+<button class="btn btn-outline-dark" (click) ='dislikeButtonClick()'>{{quote.unvote}}  <i class="fa fa-thumbs-down" aria-hidden="true"></i></button> 
 <button class="btn btn-outline-danger" (click)= 'quoteDelete(true)'>Delete</button> 

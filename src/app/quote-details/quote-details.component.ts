@@ -13,11 +13,11 @@ export class QuoteDetailsComponent implements OnInit {
   unvote = 0;
 
   likeButtonClick(){
-    this.vote ++;
+    this.quote.vote ++;
   }
   
   dislikeButtonClick(){
-    this.unvote --;
+    this.quote.unvote --;
   }
 
   @Input() quote: QuoteClass;

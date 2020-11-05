@@ -9,9 +9,10 @@
     <div class="card-body">
         <ul>
             <div *ngFor='let quote of quotes; let i = index'>
-            <li  class="card-title">
-                {{ quote.quotename }}
-            </li>
+
+            <li *ngIf='quote.vote >= 5' class="card-title" appHighlight> {{ quote.quotename }}</li>
+            <li *ngIf='quote.vote < 5' class="card-title" > {{ quote.quotename }}</li>
+
             <button class="btn btn-success"  (click)='toggleDetails(i)'>Quote Details</button>
             <app-quote-details *ngIf='quote.showDescription' [quote]='quote' (isComplete)='deleteQuote($event,i)'></app-quote-details>
         </div>

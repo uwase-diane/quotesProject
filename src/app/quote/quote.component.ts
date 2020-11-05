@@ -11,7 +11,7 @@ export class QuoteComponent implements OnInit {
  
  
   quotes: QuoteClass[] = [
-    new QuoteClass(1,'The best portion of a good man’s life is his little nameless unencumbered acts of kindness and of love',' Wordsworth','ud', new Date(11,13,2019)),
+    new QuoteClass(1,'The best portion of a good man’s life is his little nameless unencumbered acts of kindness and of love',' Wordsworth','ud', new Date(2020,3,3), 0,0),
     
   ];
 

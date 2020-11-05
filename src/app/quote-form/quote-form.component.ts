@@ -1,7 +1,7 @@
 import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 import { QuoteClass } from '../quote-class';
 
-
+// EventEmitter 
 @Component({
   selector: 'app-quote-form',
   templateUrl: './quote-form.component.html',
@@ -9,11 +9,11 @@ import { QuoteClass } from '../quote-class';
 })
 export class QuoteFormComponent implements OnInit {
 
-  newQuote = new QuoteClass (0,"","","",new Date());
+  newQuote = new QuoteClass (0,"","","",new Date(),0,0);
 
-  @Output() addQuote = new EventEmitter<QuoteClass>();
+  @Output() addQuote = new EventEmitter<QuoteClass>(); // parent to child
 
-  submitGoal(){
+  submitGoal(){  // submit form 
 this.addQuote.emit(this.newQuote);
   }
 
